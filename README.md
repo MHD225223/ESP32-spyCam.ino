@@ -18,7 +18,7 @@ FTDI USB-to-TTL Serial Adapter: Utilized to flash the compiled binary firmware o
 USB Micro Data Cable & Jumper Wires
 
 ## Links to Documentation & Tools
-Core Library Documentation: Mobizt ESP Mail Client GitHub Repository https://randomnerdtutorials.com/esp32-cam-send-photos-email/
+Core Library Documentation: Mobizt ESP Mail Client GitHub Repository
 
 Hardware & Setup Reference: Random Nerd Tutorials: ESP32-CAM E-Book Reference https://randomnerdtutorials.com/esp32-cam-send-photos-email/
 
@@ -46,6 +46,32 @@ Program Loop Realignment: Refactored the core execution functions out of the one
 4. Deployment & Execution
 GPIO 0 was jumped directly to a Ground (GND) pin to force the ESP32-S system-on-chip into bootloader programming mode. The code was uploaded across the serial bridge at a communication speed of 115200 baud. Once successfully flashed, the jumper wire grounding GPIO 0 was removed, the hardware reset switch was clicked, and the device initialized its network configuration.
 
+## Diagram and screenshoot 
+[ Physical Environment ]
+             │
+             ▼ (Motion / Runtime Loop Trigger)
+     ┌───────────────┐
+     │   ESP32-CAM   │ ──► [ Captures JPEG Image Data ]
+     └───────┬───────┘
+             │
+             ▼ (Encrypted TLS/SSL Handshake)
+       [ Wi-Fi Router ] (Verizon_QKZQ4P)
+             │
+             ▼ (Outbound Port 465 via Internet)
+     ┌───────────────┐
+     │  smtp.gmail.com│ ──► [ Google App Password Authentication ]
+     └───────┬───────┘
+             │
+             ▼ (Secure E-mail Delivery)
+   ┌───────────────────┐
+   │ mohamed225mhd223  │ ──► [ Forensic Visual Evidence Received ]
+   │    @gmail.com     │
+   └───────────────────┘
+   
+<img width="1636" height="1977" alt="image" src="https://github.com/user-attachments/assets/e7e06bd3-2436-4b5f-ac0b-81889735c19c" /> 
+<img width="3619" height="1982" alt="image" src="https://github.com/user-attachments/assets/0269987a-54d7-482a-9339-3823b7eed6ea" />
+
+
 ## Problems and Solutions
 Problem 1: Missing Compilation Dependencies * Symptom: Compilation terminated immediately on line 10 throwing a fatal error: ESP_Mail_Client.h: No such file or directory.
 
@@ -57,4 +83,4 @@ Problem 1: Missing Compilation Dependencies * Symptom: Compilation terminated im
 
 ## Final Report
 The final deployment successfully resulted in a functional, automated IoT-Integrated Forensic Capture & Monitoring Device. During testing, the system initialized properly over the local area network, printed out its internal IP address on the Serial Monitor, executed its frame capture sequence, and securely uploaded the raw data.
-The validation metric was met at 1:04 AM when a secure alert email titled "ESP32-CAM Photo Captured" containing an attached JPEG image of the monitoring workspace was successfully received by the recipient inbox, confirming operational integrity.
+The validation metric was met at 1:04 AM when a secure alert email titled "ESP32-CAM Photo Captured" containing an attached JPEG image of the monitoring workspace was successfully received by the recipient inbox, confirming operational integrity. 
