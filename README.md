@@ -3,7 +3,7 @@
 
 ## Mohamed Sylla
 
-## May 22, 2026
+## May 23, 2026
 
 ## Purpose
 The purpose of this project is to research, build, and deploy an embedded Internet of Things (IoT) physical security monitoring tool. The device uses an ESP32-CAM to establish a localized surveillance endpoint that automatically captures visual forensic evidence and securely transmits it to a remote, authenticated email destination over an encrypted network layer.
