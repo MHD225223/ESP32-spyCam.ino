@@ -23,6 +23,15 @@ Core Library Documentation: Mobizt ESP Mail Client GitHub Repository
 Hardware & Setup Reference: Random Nerd Tutorials: ESP32-CAM E-Book Reference https://randomnerdtutorials.com/esp32-cam-send-photos-email/
 
 Google Security Portal: Google App Passwords Configuration Hub
+Santos, R., & Santos, S. (2026). ESP32-CAM Projects and Embedded Systems Architecture. Random Nerd Tutorials. Retrieved from https://RandomNerdTutorials.com/esp32-cam-projects-ebook/
+
+Mobizt. (2026). ESP Mail Client Library for Arduino Devices (Version 3.x) [Software Library]. GitHub. Retrieved from https://github.com/mobizt/ESP-Mail-Client
+
+Google Account Help. (2026). Sign in with App Passwords and 2-Step Verification Policies. Google Support. Retrieved from https://support.google.com/accounts/answer/185833
+
+Internet Engineering Task Force (IETF). (2018). RFC 8314: Cleartext Passwords in Protocols for Popular Application Layer Handshakes (SMTP/TLS). Retrieved from https://datatracker.ietf.org/doc/html/rfc8314
+
+Espressif Systems. (2025). ESP32-S and OV2640 Hardware Specification Datasheet. Retrieved from https://www.espressif.com/en/support/documents/technical-documents
 
 ## AI GPTs Used
 Gemini Pro (Assisted in re-architecting synchronous setups down into continuous asynchronous runtime execution loops and debugging library header maps).
