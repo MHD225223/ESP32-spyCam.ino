@@ -34,7 +34,7 @@ Internet Engineering Task Force (IETF). (2018). RFC 8314: Cleartext Passwords in
 Espressif Systems. (2025). ESP32-S and OV2640 Hardware Specification Datasheet. Retrieved from https://www.espressif.com/en/support/documents/technical-documents
 
 ## AI GPTs Used
-Gemini Pro (Assisted in re-architecting synchronous setups down into continuous asynchronous runtime execution loops and debugging library header maps).
+Gemini Pro.
 
 ## Steps Followed
 1. Identity & Access Management (IAM) Hardening
